@@ -28,14 +28,16 @@ const { title, subTitle, src, alt, features } = Astro.props;
   <div class="relative mb-6 overflow-hidden md:mb-8">
     {
       src && alt && (
-        <Image
-          src={src}
-          alt={alt}
-          class="h-full w-full object-cover object-center"
-          draggable={"false"}
-          format={"avif"}
-          loading={"eager"}
-        />
+      <iframe
+          class="rounded-xl"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/7V_Phj2Ndb4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       )
     }
   </div>
