@@ -192,15 +192,15 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
 
     $switchableThemes.forEach(($item) => {
       $item.addEventListener("change", (e) => {
-        HSThemeAppearance.setAppearance(e.target.checked ? "dark" : "default");
+        HSThemeAppearance.setAppearance(e.target.checked ?  "default" : "dark" );
       });
 
-      $item.checked = HSThemeAppearance.getAppearance() === "dark";
+      $item.checked = HSThemeAppearance.getAppearance() === "default";
     });
 
     window.addEventListener("on-hs-appearance-change", (e) => {
       $switchableThemes.forEach(($item) => {
-        $item.checked = e.detail === "dark";
+        $item.checked = e.detail === "default";
       });
     });
   });
