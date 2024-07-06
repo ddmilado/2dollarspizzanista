@@ -22,12 +22,12 @@ export default {
         500: "#eab308",
       }, // Accent colors, used mainly for star color, heading and buttons
       orange: {
-        100: "#ffedd5",
-        200: "#fed7aa",
-        300: "#fb713b",
-        400: "#fa5a15",
-        500: "#e14d0b",
-        600: "#ea580c",
+        100: "#e53935",
+        200: "#ef9a9a",
+        300: "#e53935",
+        400: "#e53935",
+        500: "#f44336",
+        600: "#e53935",
       }, // Primary colors, used mainly for links, buttons and svg icons
       red: colors.red, // Used for bookmark icon
       zinc: colors.zinc, // Used mainly for box-shadow
