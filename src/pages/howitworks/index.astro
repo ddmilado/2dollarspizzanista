@@ -13,10 +13,10 @@ import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
 
 // Fetching all the product related content and sorting it by main.id
-const product: CollectionEntry<"products">[] = (
-  await getCollection("products")
+const product: CollectionEntry<"howitworks">[] = (
+  await getCollection("howitworks")
 ).sort(
-  (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
+  (a: CollectionEntry<"howitworks">, b: CollectionEntry<"howitworks">) =>
     a.data.main.id - b.data.main.id,
 );
 
@@ -36,8 +36,8 @@ const pageTitle: string = `How it works | ${SITE.title}`;
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/products",
-    "url": "https://screwfast.uk/products",
+    "@id": "https://screwfast.uk/howitworks",
+    "url": "https://screwfast.uk/howitworks",
     "name": "Hardware Tools | ScrewFast",
     "description": "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts.",
     "isPartOf": {
@@ -69,7 +69,7 @@ const pageTitle: string = `How it works | ${SITE.title}`;
       </div>
       
     </div>
-    <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
+    <!--Displaying howitworks in alternating styles. Alternative product gets different card styling.-->
     <!--Maps through all product entries and displays them with either CardSmall or CardWide based on their position.-->
 
   </div>

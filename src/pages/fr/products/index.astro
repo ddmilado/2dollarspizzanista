@@ -12,10 +12,10 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
 // Fetching all the product related content and sorting it by main.id
-const product: CollectionEntry<"products">[] = (
-  await getCollection("products")
+const product: CollectionEntry<"howitworks">[] = (
+  await getCollection("howitworks")
 ).sort(
-  (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
+  (a: CollectionEntry<"howitworks">, b: CollectionEntry<"howitworks">) =>
     a.data.main.id - b.data.main.id
 );
 
@@ -64,8 +64,8 @@ const testimonials = [
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/fr/products",
-    url: "https://screwfast.uk/fr/products",
+    "@id": "https://screwfast.uk/fr/howitworks",
+    url: "https://screwfast.uk/fr/howitworks",
     name: "Outils Matériels | ScrewFast",
     description:
       "Explorez la durabilité et la précision des outils ScrewFast, conçus aussi bien pour les professionnels que pour les passionnés.",
@@ -103,7 +103,7 @@ const testimonials = [
         noArrow={true}
       />
     </div>
-    <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
+    <!--Displaying howitworks in alternating styles. Alternative product gets different card styling.-->
     <!--Maps through all product entries and displays them with either CardSmall or CardWide based on their position.-->
     <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
       {

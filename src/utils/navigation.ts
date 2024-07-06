@@ -1,7 +1,7 @@
 // An array of links for navigation bar
 const navBarLinks = [
   { name: "Home", url: "/" },
-  { name: "How it works", url: "/products" },
+  { name: "How it works", url: "/howitworks" },
   
 ];
 // An array of links for footer
@@ -10,7 +10,7 @@ const footerLinks = [
     section: "Ecosystem",
     links: [
       { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
+      { name: "Tools & Equipment", url: "/howitworks" },
       { name: "Construction Services", url: "/services" },
     ],
   },

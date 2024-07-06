@@ -3,7 +3,7 @@
 import { z, defineCollection } from 'astro:content';
 import { docsSchema } from '@astrojs/starlight/schema';
 
-const productsCollection = defineCollection({
+const howitworksCollection = defineCollection({
   type: 'content',
     schema: ({ image }) => z.object({
     title: z.string(),
@@ -90,7 +90,7 @@ const insightsCollection = defineCollection({
 
 export const collections = {
   docs: defineCollection({ schema: docsSchema() }),
-  'products': productsCollection,
+  'howitworks': howitworksCollection,
   'blog': blogCollection,
   'insights': insightsCollection,
 };
