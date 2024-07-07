@@ -25,16 +25,15 @@ const ListItemMarker: string = `<svg fill="none" viewBox="0 0 24 24" stroke-widt
     <div class="lg:col-span-7">
       {
         videoUrl && (
-          <iframe
-            class="rounded-xl"
-            width="560"
-            height="315"
-            src={videoUrl}
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <video
+          class="rounded-xl"
+          width="560"
+          height="315"
+          controls
+          src={videoUrl}
+            >
+              Your browser does not support the video tag.
+            </video>
         )
       }
     </div>
