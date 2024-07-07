@@ -6,7 +6,9 @@ import CardSmall from "@components/ui/cards/CardSmall.astro";
 import CardWide from "@components/ui/cards/CardWide.astro";
 import FeaturesStatsAlt from "@components/sections/features/FeaturesStatsAlt.astro";
 import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
-
+import HowtoPurchasePIZZANISTATuesdayNFT from "../../videos/HowtoPurchasePIZZANISTATuesdayNFT.mp4"
+import ReedemPIZZANISTANFT from "../../videos/ReedemPIZZANISTANFT.mp4"
+import PhantomWallet from "../../videos/PhantomWallet.mp4"
 // Importing necessary functions from Astro
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
@@ -81,7 +83,7 @@ const pageTitle: string = `How it works | ${SITE.title}`;
       "Visit the App Store or Google Play: Search for Phantom Wallet and download the app to your device.",
       "Create a New Wallet: Follow the on-screen instructions to set up your new wallet, including securing your recovery phrase.",
     ]}
-    videoUrl="https://www.youtube.com/embed/7V_Phj2Ndb4"
+    videoUrl={PhantomWallet}
   />
   <FeaturesStatsAlt
   title="Complete Payment"
@@ -92,7 +94,7 @@ const pageTitle: string = `How it works | ${SITE.title}`;
     "Fill out your information on the checkout",
     "Click Pay",
   ]}
-  videoUrl="https://www.youtube.com/embed/PNo1dXvz98o"
+  videoUrl={HowtoPurchasePIZZANISTATuesdayNFT}
 />
 <FeaturesStatsAlt
 title="Present your NFT& Get your reward"
@@ -101,7 +103,7 @@ benefits={[
   "Once payment is confirmed, open your Phantom Wallet to view your newly acquired NFT",
   "Present our wallet address QR code to redeem your reward",
 ]}
-videoUrl="https://www.youtube.com/embed/nyvSnM4I4O0"
+videoUrl= {ReedemPIZZANISTANFT}
 />
   <!--Testimonials section-->
 </MainLayout>
