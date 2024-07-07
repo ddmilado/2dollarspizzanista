@@ -7,7 +7,7 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://screwfast.uk",
+  site: "https://pizzanista.com",
   image: {
     domains: ["images.unsplash.com"],
   },
@@ -24,7 +24,7 @@ export default defineConfig({
       },
     }),
     starlight({
-      title: "ScrewFast Docs",
+      title: "pizzanista",
       defaultLocale: "root",
       locales: {
         root: {
@@ -51,25 +51,7 @@ export default defineConfig({
           },
           autogenerate: { directory: "guides" },
         },
-        {
-          label: "Tools & Equipment",
-          items: [
-            { label: "Tool Guides", link: "tools/tool-guides/" },
-            { label: "Equipment Care", link: "tools/equipment-care/" },
-          ],
-        },
-        {
-          label: "Construction Services",
-          autogenerate: { directory: "construction" },
-        },
-        {
-          label: "Advanced Topics",
-          autogenerate: { directory: "advanced" },
-        },
       ],
-      social: {
-        github: "https://github.com/mearashadowfax/ScrewFast",
-      },
       disable404Route: true,
       customCss: ["./src/assets/styles/starlight.css"],
       favicon: "/favicon.ico",
@@ -84,14 +66,14 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "https://pizzanista.com" + "/social.webp",
           },
         },
         {
           tag: "meta",
           attrs: {
             property: "twitter:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "https://pizzanista.com" + "/social.webp",
           },
         },
       ],
