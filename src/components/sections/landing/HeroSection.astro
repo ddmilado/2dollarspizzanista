@@ -9,6 +9,7 @@ import ReviewComponent from "@components/ui/blocks/ReviewComponent.astro";
 const {
   title,
   subTitle,
+  subTitle2,
   primaryBtn,
   primaryBtnURL,
   secondaryBtn,
@@ -26,6 +27,7 @@ const {
 interface Props {
   title: string;
   subTitle?: string;
+  subTitle2?: string;
   primaryBtn?: string;
   primaryBtnURL?: string;
   secondaryBtn?: string;
@@ -59,6 +61,7 @@ interface Props {
     >
       {subTitle}
     </p>
+ 
   }
     <!-- Action Button Section: This section includes two CTAs with their own styles and URL -->
     <div class="mt-7 grid w-full gap-3 sm:inline-flex">
@@ -69,6 +72,11 @@ interface Props {
       <SecondaryCTA title={secondaryBtn} url={secondaryBtnURL} />
       }
     </div>
+    <p
+    class="mt-1 transform translate-x-10 text-pretty text-md leading-relaxed text-neutral-700 dark:text-neutral-400 lg:w-4/5"
+  >
+    {subTitle2}
+  </p>
 
     <!-- Review Section: This section presents avatars, review ratings and the number of reviews -->
     { withReview ? (

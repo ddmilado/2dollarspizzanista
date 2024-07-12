@@ -3,7 +3,7 @@
 import GithubBtn from "@components/ui/buttons/GithubBtn.astro";
 
 // Define props from Astro
-const { title, subTitle, url } = Astro.props;
+const { title, subTitle, subTitle2, url } = Astro.props;
 
 const btnTitle = Astro.currentLocale === "fr" ? "Continuer avec Github" : "Continue with Github";
 
@@ -11,6 +11,7 @@ const btnTitle = Astro.currentLocale === "fr" ? "Continuer avec Github" : "Conti
 interface Props {
   title: string;
   subTitle?: string;
+  subTitle2?: string;
   url?: string;
 }
 ---
@@ -130,6 +131,9 @@ interface Props {
       subTitle && (
         <p class="text-pretty text-lg text-neutral-600 dark:text-neutral-400">
           {subTitle}
+        </p>
+        <p class="text-pretty text-lg text-neutral-600 dark:text-neutral-400">
+          {subTitle2}
         </p>
       )
     }
