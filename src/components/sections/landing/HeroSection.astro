@@ -10,6 +10,7 @@ const {
   title,
   subTitle,
   subTitle2,
+  subTitle3,
   primaryBtn,
   primaryBtnURL,
   secondaryBtn,
@@ -28,6 +29,7 @@ interface Props {
   title: string;
   subTitle?: string;
   subTitle2?: string;
+  subTitle3?: string;
   primaryBtn?: string;
   primaryBtnURL?: string;
   secondaryBtn?: string;
@@ -61,6 +63,11 @@ interface Props {
     >
       {subTitle}
     </p>
+    <p
+      class="mt-3 text-pretty text-sm leading-relaxed text-neutral-700 dark:text-neutral-400 lg:w-4/5"
+    >
+      {subTitle3}
+    </p>
  
   }
     <!-- Action Button Section: This section includes two CTAs with their own styles and URL -->
@@ -73,7 +80,7 @@ interface Props {
       }
     </div>
     <p
-    class="mt-1 text-pretty text-md leading-relaxed text-neutral-700 dark:text-neutral-400 lg:w-4/5"
+    class="mt-1 text-pretty text-sm leading-relaxed text-neutral-700 dark:text-neutral-400 lg:w-4/5"
   >
     {subTitle2}
   </p>
